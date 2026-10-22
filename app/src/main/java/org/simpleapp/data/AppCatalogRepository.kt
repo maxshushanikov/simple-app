@@ -6,6 +6,7 @@ import org.simpleapp.model.AppInfo
 object AppCatalogRepository {
     val apps = listOf(
         AppInfo(
+            id = "vk",
             nameRes = R.string.app_vk_name,
             descriptionRes = R.string.app_vk_description,
             categoryRes = R.string.category_communication,
@@ -13,6 +14,7 @@ object AppCatalogRepository {
             iconBackgroundRes = R.color.app_icon_vk_background
         ),
         AppInfo(
+            id = "music",
             nameRes = R.string.app_music_name,
             descriptionRes = R.string.app_music_description,
             categoryRes = R.string.category_music,
@@ -20,6 +22,7 @@ object AppCatalogRepository {
             iconBackgroundRes = R.color.app_icon_music_background
         ),
         AppInfo(
+            id = "telegram",
             nameRes = R.string.app_telegram_name,
             descriptionRes = R.string.app_telegram_description,
             categoryRes = R.string.category_communication,
@@ -27,6 +30,7 @@ object AppCatalogRepository {
             iconBackgroundRes = R.color.app_icon_telegram_background
         ),
         AppInfo(
+            id = "kinopoisk",
             nameRes = R.string.app_kinopoisk_name,
             descriptionRes = R.string.app_kinopoisk_description,
             categoryRes = R.string.category_entertainment,
@@ -34,6 +38,7 @@ object AppCatalogRepository {
             iconBackgroundRes = R.color.app_icon_kinopoisk_background
         ),
         AppInfo(
+            id = "maps",
             nameRes = R.string.app_maps_name,
             descriptionRes = R.string.app_maps_description,
             categoryRes = R.string.category_travel,
@@ -41,6 +46,7 @@ object AppCatalogRepository {
             iconBackgroundRes = R.color.app_icon_maps_background
         ),
         AppInfo(
+            id = "mail",
             nameRes = R.string.app_mail_name,
             descriptionRes = R.string.app_mail_description,
             categoryRes = R.string.category_utility,
@@ -48,6 +54,7 @@ object AppCatalogRepository {
             iconBackgroundRes = R.color.app_icon_mail_background
         ),
         AppInfo(
+            id = "sber",
             nameRes = R.string.app_sber_name,
             descriptionRes = R.string.app_sber_description,
             categoryRes = R.string.category_finance,
@@ -55,11 +62,26 @@ object AppCatalogRepository {
             iconBackgroundRes = R.color.app_icon_sber_background
         ),
         AppInfo(
+            id = "calendar",
             nameRes = R.string.app_calendar_name,
             descriptionRes = R.string.app_calendar_description,
             categoryRes = R.string.category_utility,
             iconRes = R.drawable.ic_app_calendar,
             iconBackgroundRes = R.color.app_icon_calendar_background
+        ),
+        // 9-е приложение для витрины (3 страницы × 3)
+        AppInfo(
+            id = "vk_music",
+            nameRes = R.string.app_vk_music_name,
+            descriptionRes = R.string.app_vk_music_description,
+            categoryRes = R.string.category_music,
+            iconRes = R.drawable.ic_app_music,
+            iconBackgroundRes = R.color.app_icon_music_background
         )
     )
+
+    /** Захардкоженные приложения витрины: ровно 9 штук (3 страницы по 3). */
+    val showcaseApps: List<AppInfo> = apps.take(9)
+
+    fun getAppById(id: String): AppInfo? = apps.find { it.id == id }
 }

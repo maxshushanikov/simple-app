@@ -4,8 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import org.simpleapp.data.AppCatalogRepository
-import org.simpleapp.ui.AppCatalogScreen
+import org.simpleapp.ui.AppNavHost
 import org.simpleapp.ui.theme.SimpleappTheme
 
 class MainActivity : ComponentActivity() {
@@ -14,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SimpleappTheme {
-                AppCatalogScreen(apps = AppCatalogRepository.apps)
+                AppNavHost()
             }
         }
     }

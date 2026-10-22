@@ -2,6 +2,9 @@
     <string name="app_name">Каталог приложений</string>
     <string name="catalog_title">Каталог приложений</string>
     <string name="catalog_heading">Подборка для вас</string>
+    <string name="showcase_title">Витрина</string>
+    <string name="back">Назад</string>
+    <string name="install">Установить</string>
 
     <string name="category_communication">Общение</string>
     <string name="category_music">Музыка</string>
@@ -26,4 +29,6 @@
     <string name="app_sber_description">Управляйте финансами и платежами</string>
     <string name="app_calendar_name">Мой календарь</string>
     <string name="app_calendar_description">Планы и важные даты всегда под рукой</string>
+    <string name="app_vk_music_name">VK Музыка</string>
+    <string name="app_vk_music_description">Музыка, подкасты и плейлисты VK</string>
 </resources>

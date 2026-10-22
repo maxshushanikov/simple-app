@@ -2,6 +2,7 @@ package org.simpleapp.ui.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -31,9 +32,21 @@ import org.simpleapp.R
 import org.simpleapp.model.AppInfo
 
 @Composable
-fun AppListItem(app: AppInfo) {
+fun AppListItem(
+    app: AppInfo,
+    onClick: (() -> Unit)? = null,
+    modifier: Modifier = Modifier
+) {
     Card(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = modifier
+            .fillMaxWidth()
+            .then(
+                if (onClick != null) {
+                    Modifier.clickable(onClick = onClick)
+                } else {
+                    Modifier
+                }
+            ),
         shape = RoundedCornerShape(dimensionResource(R.dimen.app_card_corner_radius)),
         colors = CardDefaults.cardColors(
             containerColor = colorResource(R.color.app_surface)

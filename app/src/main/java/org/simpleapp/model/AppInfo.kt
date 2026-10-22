@@ -5,6 +5,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
 data class AppInfo(
+    val id: String,
     @param:StringRes @get:StringRes val nameRes: Int,
     @param:StringRes @get:StringRes val descriptionRes: Int,
     @param:StringRes @get:StringRes val categoryRes: Int,

@@ -29,6 +29,7 @@ import org.simpleapp.ui.theme.SimpleappTheme
 @Composable
 fun AppCatalogScreen(
     apps: List<AppInfo>,
+    onAppClick: (AppInfo) -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     Scaffold(
@@ -77,9 +78,12 @@ fun AppCatalogScreen(
             }
             items(
                 items = apps,
-                key = { app -> app.nameRes }
+                key = { app -> app.id }
             ) { app ->
-                AppListItem(app = app)
+                AppListItem(
+                    app = app,
+                    onClick = { onAppClick(app) }
+                )
             }
         }
     }
