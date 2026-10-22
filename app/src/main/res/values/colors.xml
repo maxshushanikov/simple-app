@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="app_accent">#3867D6</color>
+    <color name="app_on_accent">#FFFFFFFF</color>
+    <color name="app_background">#F4F6FA</color>
+    <color name="app_surface">#FFFFFFFF</color>
+    <color name="app_surface_variant">#EEF1F6</color>
+    <color name="app_text_primary">#1C2433</color>
+    <color name="app_text_secondary">#737B8C</color>
+    <color name="app_icon_foreground">#3867D6</color>
+
+    <color name="app_icon_vk_background">#E8F0FF</color>
+    <color name="app_icon_music_background">#FFFFE9E8</color>
+    <color name="app_icon_telegram_background">#FFE5F5FF</color>
+    <color name="app_icon_kinopoisk_background">#FFFFF1D8</color>
+    <color name="app_icon_maps_background">#FFE5F6EC</color>
+    <color name="app_icon_mail_background">#FFF0E9FF</color>
+    <color name="app_icon_sber_background">#FFE4F5E8</color>
+    <color name="app_icon_calendar_background">#FFFFE9E8</color>
 </resources>
