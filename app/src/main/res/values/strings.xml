@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">simple-app</string>
+    <string name="app_name">Каталог приложений</string>
+    <string name="catalog_title">Каталог приложений</string>
+    <string name="catalog_heading">Подборка для вас</string>
+    <string name="showcase_title">Витрина</string>
+    <string name="back">Назад</string>
+    <string name="install">Установить</string>
+    <string name="toolbar_snackbar_message">Каталог приложений · нажмите ещё раз</string>
+
+    <string name="category_communication">Общение</string>
+    <string name="category_music">Музыка</string>
+    <string name="category_entertainment">Развлечения</string>
+    <string name="category_travel">Путешествия</string>
+    <string name="category_utility">Полезное</string>
+    <string name="category_finance">Финансы</string>
+
+    <string name="app_vk_name">VK</string>
+    <string name="app_vk_description">Общайтесь с друзьями и делитесь моментами</string>
+    <string name="app_music_name">Яндекс Музыка</string>
+    <string name="app_music_description">Музыка и подкасты для любого настроения</string>
+    <string name="app_telegram_name">Telegram</string>
+    <string name="app_telegram_description">Быстрые и безопасные сообщения</string>
+    <string name="app_kinopoisk_name">Кинопоиск</string>
+    <string name="app_kinopoisk_description">Фильмы, сериалы и новые впечатления</string>
+    <string name="app_maps_name">Яндекс Карты</string>
+    <string name="app_maps_description">Находите места и стройте маршруты</string>
+    <string name="app_mail_name">Почта</string>
+    <string name="app_mail_description">Все ваши письма в одном месте</string>
+    <string name="app_sber_name">СберБанк Онлайн</string>
+    <string name="app_sber_description">Управляйте финансами и платежами</string>
+    <string name="app_calendar_name">Мой календарь</string>
+    <string name="app_calendar_description">Планы и важные даты всегда под рукой</string>
+    <string name="app_vk_music_name">VK Музыка</string>
+    <string name="app_vk_music_description">Музыка, подкасты и плейлисты VK</string>
 </resources>
