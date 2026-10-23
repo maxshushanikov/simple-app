@@ -21,18 +21,13 @@ import org.simpleapp.R
 import org.simpleapp.model.AppInfo
 import org.simpleapp.ui.components.AppListItem
 
-/**
- * Блок «Витрина» внизу карточки приложения.
- * Горизонтальный постраничный скролл (Pager): 3 страницы по 3 приложения.
- * Вёрстка элемента переиспользована из [AppListItem].
- */
+
 @Composable
 fun ShowcaseBlock(
     apps: List<AppInfo>,
     onAppClick: (AppInfo) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    // Ровно 3 страницы
     val pageCount = 3
     val appsPerPage = 3
     val pagerState = rememberPagerState(pageCount = { pageCount })

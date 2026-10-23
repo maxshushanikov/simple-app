@@ -42,10 +42,7 @@ import org.simpleapp.R
 import org.simpleapp.data.AppCatalogRepository
 import org.simpleapp.model.AppInfo
 
-/**
- * Карточка приложения (на основе экрана из практического репозитория VkEducation).
- * Внизу — отдельный UI-блок «Витрина» с HorizontalPager.
- */
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AppDetailsScreen(
@@ -86,12 +83,10 @@ fun AppDetailsScreen(
                 .padding(innerPadding)
                 .verticalScroll(rememberScrollState())
         ) {
-            // --- Header карточки (в стиле практики) ---
             AppDetailsHeader(app = app)
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Кнопка «Установить»
             Button(
                 onClick = { /* no-op for homework */ },
                 modifier = Modifier
@@ -107,7 +102,6 @@ fun AppDetailsScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // --- Блок «Витрина» в самом низу карточки ---
             ShowcaseBlock(
                 apps = AppCatalogRepository.showcaseApps,
                 onAppClick = onShowcaseAppClick,

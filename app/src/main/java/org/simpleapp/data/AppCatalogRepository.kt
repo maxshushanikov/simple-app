@@ -69,7 +69,6 @@ object AppCatalogRepository {
             iconRes = R.drawable.ic_app_calendar,
             iconBackgroundRes = R.color.app_icon_calendar_background
         ),
-        // 9-е приложение для витрины (3 страницы × 3)
         AppInfo(
             id = "vk_music",
             nameRes = R.string.app_vk_music_name,
@@ -80,7 +79,6 @@ object AppCatalogRepository {
         )
     )
 
-    /** Захардкоженные приложения витрины: ровно 9 штук (3 страницы по 3). */
     val showcaseApps: List<AppInfo> = apps.take(9)
 
     fun getAppById(id: String): AppInfo? = apps.find { it.id == id }

@@ -14,12 +14,6 @@ import org.simpleapp.R
 import org.simpleapp.data.AppCatalogRepository
 import org.simpleapp.model.AppInfo
 
-/**
- * ViewModel списка приложений (MVVM presentation layer).
- *
- * - [uiState] переживает поворот экрана — данные не загружаются повторно.
- * - [events] — Channel: snackbar не показывается повторно после rotation.
- */
 class AppCatalogViewModel(
     private val repository: AppCatalogRepository = AppCatalogRepository
 ) : ViewModel() {
@@ -35,8 +29,6 @@ class AppCatalogViewModel(
     }
 
     private fun loadApps() {
-        // Данные уже в памяти ViewModel после первого init;
-        // при configuration change ViewModel не пересоздаётся → load не вызывается снова.
         _uiState.update { it.copy(apps = repository.apps) }
     }
 
