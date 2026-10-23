@@ -5,6 +5,7 @@
     <string name="showcase_title">Витрина</string>
     <string name="back">Назад</string>
     <string name="install">Установить</string>
+    <string name="toolbar_snackbar_message">Каталог приложений · нажмите ещё раз</string>
 
     <string name="category_communication">Общение</string>
     <string name="category_music">Музыка</string>

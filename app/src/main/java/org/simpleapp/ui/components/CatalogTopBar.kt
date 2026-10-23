@@ -1,6 +1,7 @@
 package org.simpleapp.ui.components
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
@@ -24,14 +25,23 @@ import androidx.compose.ui.res.stringResource
 import org.simpleapp.R
 
 @Composable
-fun CatalogTopBar() {
+fun CatalogTopBar(
+    onClick: (() -> Unit)? = null
+) {
     Surface(color = colorResource(R.color.app_accent)) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .windowInsetsPadding(WindowInsets.statusBars)
                 .height(dimensionResource(R.dimen.catalog_top_bar_height))
-                .padding(horizontal = dimensionResource(R.dimen.catalog_top_bar_horizontal_padding)),
+                .padding(horizontal = dimensionResource(R.dimen.catalog_top_bar_horizontal_padding))
+                .then(
+                    if (onClick != null) {
+                        Modifier.clickable(onClick = onClick)
+                    } else {
+                        Modifier
+                    }
+                ),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(

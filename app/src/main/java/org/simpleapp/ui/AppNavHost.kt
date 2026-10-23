@@ -30,7 +30,6 @@ fun AppNavHost(
     ) {
         composable(Routes.CATALOG) {
             AppCatalogScreen(
-                apps = AppCatalogRepository.apps,
                 onAppClick = { app ->
                     navController.navigate(Routes.appDetails(app.id))
                 }
@@ -49,10 +48,8 @@ fun AppNavHost(
             AppDetailsScreen(
                 app = app,
                 onBackClick = { navController.popBackStack() },
-                // По клику на любое приложение из «Витрины» — на список приложений
                 onShowcaseAppClick = {
                     navController.navigate(Routes.CATALOG) {
-                        // Очищаем стек до каталога, чтобы не копить экраны
                         popUpTo(Routes.CATALOG) { inclusive = true }
                         launchSingleTop = true
                     }
