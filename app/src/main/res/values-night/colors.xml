@@ -1,0 +1,19 @@
+<resources>
+    <color name="app_accent">#89AEFF</color>
+    <color name="app_on_accent">#102D63</color>
+    <color name="app_background">#11151D</color>
+    <color name="app_surface">#1B212D</color>
+    <color name="app_surface_variant">#293243</color>
+    <color name="app_text_primary">#E6EAF2</color>
+    <color name="app_text_secondary">#A6AFBE</color>
+    <color name="app_icon_foreground">#A9C5FF</color>
+
+    <color name="app_icon_vk_background">#293B5D</color>
+    <color name="app_icon_music_background">#573337</color>
+    <color name="app_icon_telegram_background">#244556</color>
+    <color name="app_icon_kinopoisk_background">#5B4930</color>
+    <color name="app_icon_maps_background">#294D3A</color>
+    <color name="app_icon_mail_background">#44365E</color>
+    <color name="app_icon_sber_background">#294A37</color>
+    <color name="app_icon_calendar_background">#573337</color>
+</resources>
