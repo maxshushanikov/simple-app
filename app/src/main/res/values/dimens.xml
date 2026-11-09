@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="catalog_content_horizontal_padding">20dp</dimen>
+    <dimen name="catalog_content_vertical_padding">24dp</dimen>
+    <dimen name="catalog_header_bottom_padding">8dp</dimen>
+    <dimen name="catalog_header_subtitle_spacing">5dp</dimen>
+    <dimen name="catalog_item_spacing">12dp</dimen>
+    <dimen name="catalog_top_bar_height">64dp</dimen>
+    <dimen name="catalog_top_bar_horizontal_padding">20dp</dimen>
+    <dimen name="catalog_logo_size">38dp</dimen>
+    <dimen name="catalog_logo_title_spacing">12dp</dimen>
+    <dimen name="app_card_corner_radius">20dp</dimen>
+    <dimen name="app_card_elevation">1dp</dimen>
+    <dimen name="app_card_content_padding">16dp</dimen>
+    <dimen name="app_icon_size">56dp</dimen>
+    <dimen name="app_icon_corner_radius">17dp</dimen>
+    <dimen name="app_icon_inner_padding">12dp</dimen>
+    <dimen name="app_icon_content_spacing">14dp</dimen>
+    <dimen name="app_name_description_spacing">4dp</dimen>
+    <dimen name="app_description_category_spacing">10dp</dimen>
+    <dimen name="app_category_horizontal_padding">10dp</dimen>
+    <dimen name="app_category_vertical_padding">5dp</dimen>
+</resources>
